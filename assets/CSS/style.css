@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 200px;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --lighttext: rgb(228, 255, 248);
+    --dark: #3b3b4f;
+    --lightbackground: #bfd3d6;
+    --Kdam-Thmor-Pro: 'Kdam Thmor Pro', sans-serif; 
+    --background-image: linear-gradient(#2a2ad8,#020219);
+}
+
+body {
+    height: 100%;
+    color: var(--lighttext);
+    display: flex;
+    flex-direction: column;
+    background-image: var(--background-image);
+    font-family: var(--Kdam-Thmor-Pro);
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+    background-color: var(--dark);
+    height: 200px;
+    z-index: 2;  
+    border-bottom: solid var(--lightbackground) 5px;
+}
+
+header h1 {
+    color: var(--lighttext);
+    padding: 20px;
+    font-size: 42px;
+}
+
+nav a {
+    color: var(--dark);
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: var(--lighttext);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: column;
+    color: var(--light);
+}
+
+/* this is used to keep the sticky position header bar from covering content */
+.nav-anchor {
+    height: 200px;
+}
+/*this section styles and formats the about-me area of the page*/
+.about-section {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+    padding: 2%;
+    color: var(--light);
+    border-bottom: solid var(--lightbackground) 5px;
+    text-align: start; 
+    margin-left: 20px;
+    margin-right: 20px;  
+    line-height: 2;
+}
+
+.about-section > h2 {
+    grid-row-start: 1;
+}
+
+.about-image-div {
+    grid-row-start: 2;
+    text-align: center;
+    display: inline;
+}
+
+.about-me-p {
+    grid-row-start: 2;
+}
+
+.me-img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+   }
+
+/*the project section has some minor grid differences from about-me so it's called out separately*/  
+.project-section {
+    display: grid;
+    gap: 25px;
+    padding: 2%;
+    color: var(--light);
+    border-bottom: solid var(--lightbackground) 5px;
+    text-align: start;
+    margin-left: 20px;
+    margin-right: 20px; 
+}
+/* this is the high level grid layout for all of the project cards*/
+.cards {
+    display: grid;
+     grid-template-columns: repeat(2,1fr);
+     gap: 15px;
+}
+
+.cards > section:first-of-type {
+    grid-column: span 2;
+}
+
+
+.quickbyte-div {
+    height: 300px;
+    overflow: hidden;
+    filter: brightness(50%);
+    border-radius: 3px;
+    display: flex;
+}
+
+.quickbyte-div:hover {
+    filter: brightness(100%);
+    box-shadow: inset 0 0 3px rgb(102, 144, 236), 0 0 3px rgb(102, 144, 236);
+  }
+
+.quickbyte {
+    display: flex;
+    grid-column: 1;
+    width: 100%;
+    background-image: url("../images/acorbridg.github.io_Project1_.png");
+    background-size: 150%;
+    align-items: flex-end;
+    background-size: cover;
+}    
+
+.project-title {
+    display: flex;
+    background-color: var(--dark);
+    padding: 1%;
+    color: var(--lighttext);
+    flex-direction: column;
+}
+  
+.small-project {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    filter: brightness(50%);
+    border-radius: 3px;
+}
+
+.small-project:hover {
+    filter: brightness(100%);
+    box-shadow: inset 0px 0px 10px rgb(102, 144, 236), 0 0 10px rgb(102, 144, 236);
+}
+
+.small-project-style {
+    display: flex;
+    grid-column: 1;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.small-project2 {
+    background-image: url("../images/1mohammad-alizade-XgeZu2jBaVI-unsplash.jpg");
+    background-size: cover;
+}
+
+.small-project3 {
+    background-image: url("../images/peru-IMG_4526.jpeg");
+    background-size: cover;
+}
+
+.small-project4 {
+    background-image: url("../images/pexels-pixabay-65894.jpg");
+    background-size: cover;
+}
+
+.small-project5 {
+    background-image: url("../images/3philipp-katzenberger-iIJrUoeRoCQ-unsplash.jpg");
+    background-size: cover;
+}
+
+#Contact{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--dark);
+    margin: 1em;
+    padding: 1.2em;
+}
+
+#contact-info {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
