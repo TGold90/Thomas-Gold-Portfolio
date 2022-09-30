@@ -10,8 +10,8 @@
     --lighttext: rgb(228, 255, 248);
     --dark: #3b3b4f;
     --lightbackground: #bfd3d6;
-    --Kdam-Thmor-Pro: 'Kdam Thmor Pro', sans-serif; 
-    --background-image: linear-gradient(#2a2ad8,#020219);
+    --Kdam-Thmor-Pro: 'Kdam Thmor Pro', sans-serif;
+    --background-image: linear-gradient(#2a2ad8, #020219);
 }
 
 body {
@@ -33,7 +33,7 @@ header {
     padding: 50px;
     background-color: var(--dark);
     height: 200px;
-    z-index: 2;  
+    z-index: 2;
     border-bottom: solid var(--lightbackground) 5px;
 }
 
@@ -65,21 +65,22 @@ main {
 .nav-anchor {
     height: 200px;
 }
+
 /*this section styles and formats the about-me area of the page*/
 .about-section {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 25px;
     padding: 2%;
     color: var(--light);
     border-bottom: solid var(--lightbackground) 5px;
-    text-align: start; 
+    text-align: start;
     margin-left: 20px;
-    margin-right: 20px;  
+    margin-right: 20px;
     line-height: 2;
 }
 
-.about-section > h2 {
+.about-section>h2 {
     grid-row-start: 1;
 }
 
@@ -97,9 +98,9 @@ main {
     height: 300px;
     width: 100%;
     object-fit: cover;
-   }
+}
 
-/*the project section has some minor grid differences from about-me so it's called out separately*/  
+/*the project section has some minor grid differences from about-me so it's called out separately*/
 .project-section {
     display: grid;
     gap: 25px;
@@ -108,16 +109,17 @@ main {
     border-bottom: solid var(--lightbackground) 5px;
     text-align: start;
     margin-left: 20px;
-    margin-right: 20px; 
+    margin-right: 20px;
 }
+
 /* this is the high level grid layout for all of the project cards*/
 .cards {
     display: grid;
-     grid-template-columns: repeat(2,1fr);
-     gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
 }
 
-.cards > section:first-of-type {
+.cards>section:first-of-type {
     grid-column: span 2;
 }
 
@@ -133,17 +135,17 @@ main {
 .quickbyte-div:hover {
     filter: brightness(100%);
     box-shadow: inset 0 0 3px rgb(102, 144, 236), 0 0 3px rgb(102, 144, 236);
-  }
+}
 
 .quickbyte {
     display: flex;
     grid-column: 1;
     width: 100%;
-    background-image: url("../images/acorbridg.github.io_Project1_.png");
+    background-image: url("../images/rplite.herokuapp.com_profile.png");
     background-size: 150%;
     align-items: flex-end;
     background-size: cover;
-}    
+}
 
 .project-title {
     display: flex;
@@ -152,7 +154,7 @@ main {
     color: var(--lighttext);
     flex-direction: column;
 }
-  
+
 .small-project {
     display: flex;
     width: 100%;
@@ -175,7 +177,7 @@ main {
 }
 
 .small-project2 {
-    background-image: url("../images/1mohammad-alizade-XgeZu2jBaVI-unsplash.jpg");
+    background-image: url("../images/acorbridg.github.io_Project1_.png");
     background-size: cover;
 }
 
@@ -194,7 +196,7 @@ main {
     background-size: cover;
 }
 
-#Contact{
+#Contact {
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -207,4 +209,3 @@ main {
     padding-left: 15px;
     padding-right: 15px;
 }
-
